@@ -19,36 +19,16 @@ header{
 }
 .navBar a{
     text-decoration: none;
+    color: black;
+    padding: 0pc 20px;
  }
- 
-
-
-
-
-
-
-#navBar{
-    /*background-color:cadetblue;*/
-    display: flex;
-    flex-direction: row;
-    
+ .social-media{
+     margin-left: auto;
+ }
+ .social-media img{
+    height: 32px;
 }
 
-#navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
- 
-}
-
-.icons{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width: 10%;
-    /*background-color:black;*/
-}
 
 .slogan{
     display: flex;

@@ -1,5 +1,6 @@
 body{
     margin: 0px 5%;
+    color: black;
 }
 header{
     display: flex;
@@ -38,19 +39,27 @@ header{
     
 }
 
+.top-content{
+    background-color: #BFAA93;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.place-holder{
+    background-color:#685a4b ;
+    width: 300px;
+    height: 450px;
+    margin: auto;
+}
+
 /* Typography*/
 
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
-    width: 511px;
-    color: black;
-    background-color: #BFAA93;
 }
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
     width: 455px;
-    color: black;
 }

@@ -1,6 +1,7 @@
 body{
     margin: 0px 5%;
     color: black;
+    height: 1200px;
 }
 header{
     display: flex;
@@ -30,25 +31,41 @@ header{
     height: 32px;
 }
 
-
-.slogan{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.top-content{
+    margin-top: 120px;
+    display: grid;
+    grid-auto-rows: 3fr 1fr;
+    grid-template-areas: 
+    'left1 left1 right'
+    'left1 left1 blank ';
+    grid-gap: 10px;
     background-color: #BFAA93;
+}
+.left-side{
+    grid-area: left1;
+    position: relative;
+    height: 400px;
+}
+.right-side{
+    grid-area: right;
+    width: 340px;
+    z-index: 9;
+    padding-right: 30px;
     
 }
-
-.top-content{
-    background-color: #BFAA93;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.blank{
+    grid-area: blank;
+    background-color: white;
 }
 .place-holder{
     background-color:#685a4b ;
-    width: 300px;
-    height: 450px;
     margin: auto;
+    position: absolute;
+    right: -40px;
+    top: -60px;
+    width: 300px;
+    height: 90%;
+    z-index: 0;
 }
 
 /* Typography*/
@@ -60,6 +77,10 @@ h1{
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    width: 455px;
+    font-size: 16px;
+}
+.text-lg{
+    font-size: 40px;
+    font-weight: 900;
+
 }

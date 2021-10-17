@@ -1,7 +1,6 @@
 body{
     margin: 0px 5%;
     color: black;
-    height: 1200px;
 }
 header{
     display: flex;
@@ -68,6 +67,11 @@ header{
     z-index: 0;
 }
 
+footer{
+    background-color: #BFAA93;
+    padding: 30px;
+}
+
 /* Typography*/
 
 h1{
@@ -83,4 +87,7 @@ p{
     font-size: 40px;
     font-weight: 900;
 
+}
+.text-center{
+    text-align: center;
 }

@@ -1,11 +1,17 @@
 body{
-    margin: 0px 5%;
+    margin: 0;
     color: black;
 }
 header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 12px 5%;
+    box-shadow: 0px 0px 6px #c3c3c3;
 }
 
 .logo{
@@ -13,9 +19,7 @@ header{
 }
 
 .navBar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: auto;
 }
 .navBar ul{
     list-style-type: none; /* Remove bullets */
@@ -41,32 +45,50 @@ header{
 }
 
 .top-content{
-    margin-top: 120px;
+    display: flex;
+    margin-top: 30px;
+    background-image: url(../images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    height: 90vh;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+    /*
     display: grid;
     grid-auto-rows: 3fr 1fr;
     grid-template-areas: 
     'left1 left1 right'
     'left1 left1 blank ';
     grid-gap: 10px;
-    background-color: #BFAA93;
+    background-color: #BFAA93;*/
 }
 .left-side{
+    display: inline-block;
+    width: 40%;
+    
+    /*
     grid-area: left1;
     position: relative;
-    height: 400px;
+    height: 400px;*/
 }
 .right-side{
-    grid-area: right;
+    display: inline-block;
+    width: 500px;
+    
+    /*grid-area: right;
     width: 340px;
     z-index: 9;
     padding-right: 30px;
-    
+    */
 }
 .blank{
     grid-area: blank;
     background-color: white;
 }
 .place-holder{
+    /*
     background-color:#685a4b ;
     margin: auto;
     position: absolute;
@@ -75,6 +97,7 @@ header{
     width: 300px;
     height: 90%;
     z-index: 0;
+    */
 }
 
 footer{
@@ -87,31 +110,22 @@ footer{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
-<<<<<<< HEAD
-    color: black;
-    
+    font-weight: 700;
 }
 
-h5{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-}
-
-h6{
+header h6{
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 15px;
+    line-height: 120%;
     width: 74px;
-    color: black;
-=======
->>>>>>> c04aa08b55937a90dc9f3dc86635512f9fe5c2dd
+    margin: 0;
 }
+
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
-<<<<<<< HEAD
-    font-size: 24px;
-    color: black;
-=======
     font-size: 16px;
 }
 .text-lg{
@@ -121,5 +135,4 @@ p{
 }
 .text-center{
     text-align: center;
->>>>>>> c04aa08b55937a90dc9f3dc86635512f9fe5c2dd
 }

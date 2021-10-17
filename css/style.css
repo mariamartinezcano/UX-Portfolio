@@ -1,5 +1,6 @@
 body{
     margin: 0px 5%;
+    color: black;
 }
 header{
     display: flex;
@@ -39,19 +40,46 @@ header{
     height: 32px;
 }
 
-.topContent{
-    background-color: blueviolet;
+.top-content{
+    margin-top: 120px;
+    display: grid;
+    grid-auto-rows: 3fr 1fr;
+    grid-template-areas: 
+    'left1 left1 right'
+    'left1 left1 blank ';
+    grid-gap: 10px;
+    background-color: #BFAA93;
 }
 .left-side{
-    background-image: url('../images/background.png');
-    background-position: center;
+    grid-area: left1;
+    position: relative;
+    height: 400px;
 }
 .right-side{
-    width: 511px;
-    float: right;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: blue; 
+    grid-area: right;
+    width: 340px;
+    z-index: 9;
+    padding-right: 30px;
+    
+}
+.blank{
+    grid-area: blank;
+    background-color: white;
+}
+.place-holder{
+    background-color:#685a4b ;
+    margin: auto;
+    position: absolute;
+    right: -40px;
+    top: -60px;
+    width: 300px;
+    height: 90%;
+    z-index: 0;
+}
+
+footer{
+    background-color: #BFAA93;
+    padding: 30px;
 }
 
 /* Typography*/
@@ -59,6 +87,7 @@ header{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
+<<<<<<< HEAD
     color: black;
     
 }
@@ -73,10 +102,24 @@ h6{
     font-size: 15px;
     width: 74px;
     color: black;
+=======
+>>>>>>> c04aa08b55937a90dc9f3dc86635512f9fe5c2dd
 }
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
+<<<<<<< HEAD
     font-size: 24px;
     color: black;
+=======
+    font-size: 16px;
+}
+.text-lg{
+    font-size: 40px;
+    font-weight: 900;
+
+}
+.text-center{
+    text-align: center;
+>>>>>>> c04aa08b55937a90dc9f3dc86635512f9fe5c2dd
 }

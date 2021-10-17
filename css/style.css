@@ -3,11 +3,18 @@ body{
 }
 header{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
+
 .logo{
     height: 48px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navBar ul{
     list-style-type: none; /* Remove bullets */
@@ -16,6 +23,9 @@ header{
 }
 .navBar ul li{
    display: inline-block;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
 }
 .navBar a{
     text-decoration: none;
@@ -29,13 +39,19 @@ header{
     height: 32px;
 }
 
-
-.slogan{
-    display: flex;
+.topContent{
+    background-color: blueviolet;
+}
+.left-side{
+    background-image: url('../images/background.png');
+    background-position: center;
+}
+.right-side{
+    width: 511px;
+    float: right;
     flex-direction: column;
     align-items: flex-end;
-    background-color: #BFAA93;
-    
+    background-color: blue; 
 }
 
 /* Typography*/
@@ -43,14 +59,24 @@ header{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
-    width: 511px;
     color: black;
-    background-color: #BFAA93;
+    
+}
+
+h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 74px;
+    color: black;
 }
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
-    width: 455px;
     color: black;
 }

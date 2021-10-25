@@ -88,18 +88,19 @@ header{
 }
 
 .content{
-    display: grid;
-    justify-content: center;
+    display: flex;
     background-color: #BFAA93;
     height: 700px;
-    
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
 }
 
 .columns{
-    
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    align-content: center;
     
 }
 .illustration{
@@ -112,7 +113,16 @@ header{
     
 }
 
+/* My Work */
+left{
+    display: inline-block;
+    width: 400px;
+}
 
+right{
+    display: inline-block;
+    width: 400px;
+}
 /* Footer */
 footer{
     background-color: #BFAA93;
@@ -125,6 +135,13 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
     font-weight: 700;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-weight: normal;
 }
 
 header h6{

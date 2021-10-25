@@ -2,6 +2,8 @@ body{
     margin: 0;
     color: black;
 }
+
+/* Navigation */
 header{
     display: flex;
     justify-content: center;
@@ -18,36 +20,39 @@ header{
     height: 48px;
 }
 
-
-
 .navBar{
     margin-left: auto;
 }
+
 .navBar ul{
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
 }
+
 .navBar ul li{
    display: inline-block;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 20px;
    font-weight: 400;
 }
+
 .navBar a{
     text-decoration: none;
     color: black;
     padding: 0pc 20px;
  }
+
  .social-media{
-     margin-left: auto;
+    margin-left: auto;
  }
+
  .social-media img{
     height: 32px;
 }
 
 
-
+/* Top Content */
 .top-content{
     display: flex;
     margin-top: 30px;
@@ -56,63 +61,66 @@ header{
     background-repeat: no-repeat;
     margin-left: 5%;
     height: 90vh;
-    /* width: 100%; */
     align-items: center;
     justify-content: space-between;
-    /*
-    display: grid;
-    grid-auto-rows: 3fr 1fr;
-    grid-template-areas: 
-    'left1 left1 right'
-    'left1 left1 blank ';
-    grid-gap: 10px;
-    background-color: #BFAA93;*/
 }
+
 .left-side{
     display: inline-block;
     width: 40%;
-    
-    /*
-    grid-area: left1;
-    position: relative;
-    height: 400px;*/
 }
+
 .right-side{
     display: inline-block;
     width: 500px;
-    
-    /*grid-area: right;
-    width: 340px;
-    z-index: 9;
-    padding-right: 30px;
-    */
 }
+
 .blank{
     grid-area: blank;
     background-color: white;
 }
-.place-holder{
-    /*
-    background-color:#685a4b ;
-    margin: auto;
-    position: absolute;
-    right: -40px;
-    top: -60px;
-    width: 300px;
-    height: 90%;
-    z-index: 0;
-    */
+
+
+/* About Me */
+.about-me{
+    margin: 0 5%;
+    
 }
 
+.content{
+    display: grid;
+    justify-content: center;
+    background-color: #BFAA93;
+    height: 700px;
+    
+}
+
+.columns{
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+    
+}
+.illustration{
+    background-color:#685a4b;
+    margin-top: 50px;
+    /*margin: auto;*/
+    width: 400px;
+    height: 200px;
+    
+    
+}
+
+
+/* Footer */
 footer{
     background-color: #BFAA93;
     padding: 30px;
 }
 
+
 /* Typography*/
-
-
-
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 47px;
@@ -129,11 +137,20 @@ header h6{
     margin: 0;
 }
 
+.content p{
+    width: 400px;
+
+}
+
+footer p{
+    color: white;
+}
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
+
 .text-lg{
     font-size: 40px;
     font-weight: 900;

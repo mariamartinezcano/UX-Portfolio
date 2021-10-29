@@ -89,7 +89,7 @@ header{
 
 .content{
     display: flex;
-    background-color: #BFAA93;
+    
     height: 700px;
     flex-direction: column;
     margin: 20px;
@@ -101,6 +101,7 @@ header{
     align-items: flex-start;
     flex-direction: row;
     align-content: center;
+    justify-content: center;
     
 }
 .illustration{
@@ -114,15 +115,23 @@ header{
 }
 
 /* My Work */
-left{
-    display: inline-block;
-    width: 400px;
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
-right{
-    display: inline-block;
-    width: 400px;
+
+.bottom{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+  
 }
+
+
 /* Footer */
 footer{
     background-color: #BFAA93;

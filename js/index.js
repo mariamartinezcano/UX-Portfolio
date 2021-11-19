@@ -1,12 +1,12 @@
 $(".aboutMe").click(function() {
     $('html, body').animate({
-        scrollTop: $(".about-me").offset().top-120
+        scrollTop: $(".about-me").offset().top-110
     }, 1000);
 });
 
 $(".myProjects").click(function() {
     $('html, body').animate({
-        scrollTop: $(".my-work").offset().top-120
+        scrollTop: $(".my-work").offset().top-50
     }, 1000);
 });
 

@@ -1,17 +1,17 @@
-$(".aboutMe").click(function() {
+$("#aboutMe").click(function() {
     $('html, body').animate({
-        scrollTop: $(".about-me").offset().top-110
-    }, 1000);
+        scrollTop: $("#about-me").offset().top-120
+    }, 500);
 });
 
-$(".myProjects").click(function() {
+$("#myProjects").click(function() {
     $('html, body').animate({
-        scrollTop: $(".my-work").offset().top-50
-    }, 1000);
+        scrollTop: $("#my-work").offset().top-120
+    }, 500);
 });
 
-$(".contactMe").click(function() {
+$("#contactMe").click(function() {
     $('html, body').animate({
         scrollTop: $("footer").offset().top
-    }, 1000);
+    }, 500);
 });
